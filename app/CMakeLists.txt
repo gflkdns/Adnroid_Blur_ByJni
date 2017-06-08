@@ -2,12 +2,7 @@ cmake_minimum_required(VERSION 3.4.1)
 find_library(
               log-lib
               log )
-add_library(
-             native-lib
-             SHARED
-             src/main/cpp/native-lib.cpp )
-target_link_libraries(native-lib jnigraphics
-                       ${log-lib} )
+
 add_library(
              static-blur
              SHARED
